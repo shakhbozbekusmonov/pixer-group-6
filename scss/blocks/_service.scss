@@ -1,0 +1,94 @@
+/* SERVICE STYLES START */
+.service {
+    padding-top: 50px;
+    padding-bottom: 18px;
+    background-color: var(--backgroundSecondary);
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 40px;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 140%;
+        text-align: center;
+        color: var(--colorPrimary);
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include list-unstyled;
+    }
+
+    &__item {
+        position: relative;
+        width: 100%;
+        max-width: 384px;
+        margin-bottom: 32px;
+        padding: 40px 30px;
+        border: 2px solid #e1e7ed;
+        border-radius: 6px;
+
+        &::before {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            display: inline-block;
+            content: "";
+            width: 64px;
+            height: 64px;
+            padding: 17px;
+            border-radius: 50%;
+            background-color: #e1e7ed;
+            background-image: url("../images/web-designer-icon.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &:hover {
+            background-color: var(--backgroundThirty);
+            border-color: var(--backgroundThirty);
+            .service__item--title,
+            .service__item--desc,
+            .service__item--link {
+                color: var(--backgroundPrimary);
+            }
+
+            .service__item--link {
+                text-decoration: underline;
+            }
+
+            &::before {
+                background-color: var(--backgroundPrimary);
+            }
+        }
+    }
+
+    &__item--title {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 140%;
+        color: var(--colorPrimary);
+    }
+
+    &__item--desc {
+        margin-top: 0;
+        margin-bottom: 23px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: var(--colorSecondary);
+    }
+
+    &__item--link {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 140%;
+        color: #000;
+        @include link-unstyled;
+    }
+}
+/* SERVICE STYLES END */
