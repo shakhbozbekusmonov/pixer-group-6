@@ -542,7 +542,17 @@ img {
   font-size: 16px;
   line-height: 120%;
   color: var(--backgroundPrimary);
+  border: 1.5px solid var(--backgroundThirty);
   text-decoration: none;
+}
+.hero__btn:hover {
+  color: var(--backgroundThirty);
+  background-color: transparent;
+}
+.hero__btn:active {
+  background-color: var(--backgroundThirty);
+  color: var(--backgroundPrimary);
+  opacity: 0.7;
 }
 .hero__end {
   width: 592px;
@@ -555,4 +565,91 @@ img {
   border: none;
 }
 
-/* HERO STYLES END *//*# sourceMappingURL=main.css.map */
+/* HERO STYLES END */
+/* SERVICE STYLES START */
+.service {
+  padding-top: 50px;
+  padding-bottom: 18px;
+  background-color: var(--backgroundSecondary);
+}
+.service__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 140%;
+  text-align: center;
+  color: var(--colorPrimary);
+}
+.service__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.service__item {
+  position: relative;
+  width: 100%;
+  max-width: 384px;
+  margin-bottom: 32px;
+  padding: 40px 30px;
+  border: 2px solid #e1e7ed;
+  border-radius: 6px;
+}
+.service__item::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: inline-block;
+  content: "";
+  width: 64px;
+  height: 64px;
+  padding: 17px;
+  border-radius: 50%;
+  background-color: #e1e7ed;
+  background-image: url("../images/web-designer-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.service__item:hover {
+  background-color: var(--backgroundThirty);
+  border-color: var(--backgroundThirty);
+}
+.service__item:hover .service__item--title,
+.service__item:hover .service__item--desc,
+.service__item:hover .service__item--link {
+  color: var(--backgroundPrimary);
+}
+.service__item:hover .service__item--link {
+  text-decoration: underline;
+}
+.service__item:hover::before {
+  background-color: var(--backgroundPrimary);
+}
+.service__item--title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 140%;
+  color: var(--colorPrimary);
+}
+.service__item--desc {
+  margin-top: 0;
+  margin-bottom: 23px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--colorSecondary);
+}
+.service__item--link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: #000;
+  text-decoration: none;
+}
+
+/* SERVICE STYLES END *//*# sourceMappingURL=main.css.map */

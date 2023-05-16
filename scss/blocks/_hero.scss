@@ -40,7 +40,19 @@
         font-size: 16px;
         line-height: 120%;
         color: var(--backgroundPrimary);
+        border: 1.5px solid var(--backgroundThirty);
         @include link-unstyled;
+
+        &:hover {
+            color: var(--backgroundThirty);
+            background-color: transparent;
+        }
+
+        &:active {
+            background-color: var(--backgroundThirty);
+            color: var(--backgroundPrimary);
+            opacity: 0.7;
+        }
     }
 
     &__end {
