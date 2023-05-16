@@ -1,0 +1,79 @@
+/* HEADER STYLES START */
+.site-header {
+    padding: 24px 0;
+    background-color: var(--backgroundPrimary);
+    border-bottom: 1px solid #eeeef4;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__start {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: 50px;
+    }
+
+    &__logo--img {
+        width: 81px;
+        height: 28px;
+    }
+
+    &__nav--list {
+        @include list-unstyled;
+        display: flex;
+    }
+
+    &__nav--item {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__nav--link {
+        font-size: 16px;
+        line-height: 150%;
+        color: var(--colorPrimary);
+        @include link-unstyled;
+
+        &:hover {
+            color: var(--backgroundThirty);
+        }
+
+        &:active {
+            color: var(--backgroundThirty);
+            opacity: 0.6;
+        }
+    }
+
+    &__btn {
+        padding: 12px 24px;
+        background-color: var(--colorPrimary);
+        border-radius: 6px;
+        @include link-unstyled;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 120%;
+        color: var(--backgroundPrimary);
+        border: 1px solid var(--colorPrimary);
+
+        &:hover {
+            border-color: var(--backgroundThirty);
+            color: var(--backgroundThirty);
+            background-color: transparent;
+        }
+
+        &:active {
+            border-color: var(--colorPrimary);
+            color: var(--backgroundPrimary);
+            background-color: var(--colorPrimary);
+            opacity: 0.6;
+        }
+    }
+}
+/* HEADER STYLES END */

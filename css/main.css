@@ -1,5 +1,5 @@
 :root {
-  --colorPrimry: #101010;
+  --colorPrimary: #101010;
   --colorSecondary: #636f87;
   --backgroundPrimary: #fff;
   --backgroundSecondary: #f2f4f6;
@@ -399,8 +399,9 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  font-family: "Arial", sans-serif;
-  background-color: #fff;
+  font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  background-color: var(--backgroundPrimary);
 }
 
 img {
@@ -428,4 +429,73 @@ img {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/* HEADER STYLES START */
+.site-header {
+  padding: 24px 0;
+  background-color: var(--backgroundPrimary);
+  border-bottom: 1px solid #eeeef4;
+}
+.site-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-header__start {
+  display: flex;
+  align-items: center;
+}
+.site-header__logo {
+  margin-right: 50px;
+}
+.site-header__logo--img {
+  width: 81px;
+  height: 28px;
+}
+.site-header__nav--list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+.site-header__nav--item:not(:last-child) {
+  margin-right: 30px;
+}
+.site-header__nav--link {
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--colorPrimary);
+  text-decoration: none;
+}
+.site-header__nav--link:hover {
+  color: var(--backgroundThirty);
+}
+.site-header__nav--link:active {
+  color: var(--backgroundThirty);
+  opacity: 0.6;
+}
+.site-header__btn {
+  padding: 12px 24px;
+  background-color: var(--colorPrimary);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--backgroundPrimary);
+  border: 1px solid var(--colorPrimary);
+}
+.site-header__btn:hover {
+  border-color: var(--backgroundThirty);
+  color: var(--backgroundThirty);
+  background-color: transparent;
+}
+.site-header__btn:active {
+  border-color: var(--colorPrimary);
+  color: var(--backgroundPrimary);
+  background-color: var(--colorPrimary);
+  opacity: 0.6;
+}
+
+/* HEADER STYLES END *//*# sourceMappingURL=main.css.map */
