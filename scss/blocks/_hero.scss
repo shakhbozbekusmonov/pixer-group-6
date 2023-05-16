@@ -1,0 +1,58 @@
+/* HERO STYLES START */
+.hero {
+    padding-top: 91px;
+    padding-bottom: 156px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__start {
+        width: 100%;
+        max-width: 537px;
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 140%;
+        color: var(--colorPrimary);
+    }
+
+    &__desc {
+        margin-top: 0;
+        margin-bottom: 40px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: var(--colorSecondary);
+    }
+
+    &__btn {
+        display: inline-block;
+        padding: 20px 40px;
+        background-color: var(--backgroundThirty);
+        border-radius: 6px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 120%;
+        color: var(--backgroundPrimary);
+        @include link-unstyled;
+    }
+
+    &__end {
+        width: 592px;
+        height: 334px;
+    }
+
+    &__end--video {
+        width: 592px;
+        height: 334px;
+        border-radius: 6px;
+        border: none;
+    }
+}
+/* HERO STYLES END */
