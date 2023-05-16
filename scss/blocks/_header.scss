@@ -17,11 +17,17 @@
 
     &__logo {
         margin-right: 50px;
-    }
+        color: var(--colorPrimary);
 
-    &__logo--img {
-        width: 81px;
-        height: 28px;
+        &:hover {
+            color: #191919;
+            opacity: 0.8;
+        }
+
+        &:active {
+            color: #191919;
+            opacity: 0.6;
+        }
     }
 
     &__nav--list {

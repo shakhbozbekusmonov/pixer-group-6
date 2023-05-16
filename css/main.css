@@ -448,10 +448,15 @@ img {
 }
 .site-header__logo {
   margin-right: 50px;
+  color: var(--colorPrimary);
 }
-.site-header__logo--img {
-  width: 81px;
-  height: 28px;
+.site-header__logo:hover {
+  color: #191919;
+  opacity: 0.8;
+}
+.site-header__logo:active {
+  color: #191919;
+  opacity: 0.6;
 }
 .site-header__nav--list {
   padding: 0;
